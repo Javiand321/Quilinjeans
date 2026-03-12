@@ -74,7 +74,7 @@ export default function Footer() {
             <ul className="space-y-4 text-sm text-gray-500">
               <li className="flex items-start space-x-3">
                 <MapPin size={18} className="text-pink-500 mt-0.5" />
-                <span>Av. de la Moda 123<br />Bogotá, Colombia</span>
+                <span>CC Centrolandia<br />Calle 11 #11 - 30<br />Puesto 34 y 35</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone size={18} className="text-pink-500" />
