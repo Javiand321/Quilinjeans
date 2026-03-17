@@ -14,7 +14,20 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Quilin Jeans",
-  description: "Tienda de jeans con estilo y arte.",
+  description: "Fábrica directa de jeans y mayoristas. Diseños exclusivos y calidad insuperable.",
+  openGraph: {
+    title: "Quilin Jeans | Arte y Estilo",
+    description: "Fábrica directa de jeans y mayoristas. Diseños exclusivos y calidad insuperable.",
+    images: [
+      {
+        url: "/logo-unicorn.jpg",
+        width: 800,
+        height: 800,
+        alt: "Quilin Jeans Logo",
+      },
+    ],
+    type: "website",
+  },
   icons: {
     icon: "/logo-unicorn.jpg",
   },
