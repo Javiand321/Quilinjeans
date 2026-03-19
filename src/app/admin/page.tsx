@@ -2,7 +2,7 @@
 
 import { useProducts } from '@/context/ProductContext';
 import Link from 'next/link';
-import { Plus, Edit, Trash2, ArrowLeft } from 'lucide-react';
+import { Plus, Edit, Trash2, ArrowLeft, BookOpen } from 'lucide-react';
 import Image from 'next/image';
 
 export default function AdminDashboard() {
@@ -16,13 +16,22 @@ export default function AdminDashboard() {
             <h1 className="text-3xl font-bold text-gray-900">Panel de Administración</h1>
             <p className="text-gray-500 mt-2">Gestiona tu catálogo de productos</p>
           </div>
-          <Link 
-            href="/admin/new" 
-            className="bg-purple-600 text-white px-6 py-3 rounded-xl font-bold shadow-lg hover:bg-purple-700 transition-all flex items-center space-x-2"
-          >
-            <Plus size={20} />
-            <span>Nuevo Producto</span>
-          </Link>
+          <div className="flex gap-4">
+            <Link 
+              href="/admin/blog" 
+              className="bg-white text-purple-600 px-6 py-3 rounded-xl font-bold border border-purple-200 hover:bg-purple-50 transition-colors flex items-center space-x-2"
+            >
+              <BookOpen size={20} />
+              <span>Gestionar Blog</span>
+            </Link>
+            <Link 
+              href="/admin/new" 
+              className="bg-gray-900 text-white px-6 py-3 rounded-xl font-bold shadow-lg hover:bg-gray-800 transition-colors flex items-center space-x-2"
+            >
+              <Plus size={20} />
+              <span>Nuevo Producto</span>
+            </Link>
+          </div>
         </div>
 
         <div className="bg-white rounded-3xl shadow-sm overflow-hidden">

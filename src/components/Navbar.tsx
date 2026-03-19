@@ -72,6 +72,9 @@ export default function Navbar() {
             <Link href="/wholesale" className="text-gray-600 hover:text-pink-500 transition-colors font-medium">
               Mayoristas
             </Link>
+            <Link href="/blog" className="text-gray-600 hover:text-pink-500 transition-colors font-medium">
+              Blog
+            </Link>
             <Link href="/about" className="text-gray-600 hover:text-pink-500 transition-colors font-medium">
               Nosotros
             </Link>
@@ -178,6 +181,13 @@ export default function Navbar() {
                 onClick={() => setIsOpen(false)}
               >
                 Mayoristas
+              </Link>
+              <Link 
+                href="/blog" 
+                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-pink-500 hover:bg-pink-50"
+                onClick={() => setIsOpen(false)}
+              >
+                Blog
               </Link>
               <Link 
                 href="/about" 
